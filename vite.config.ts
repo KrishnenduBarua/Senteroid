@@ -9,8 +9,14 @@ export default defineConfig({
       cesium: path.resolve(__dirname, "node_modules/cesium"),
     },
   },
+  /**
+   * IMPORTANT: In production we copy Cesium's Build/Cesium assets into /public/cesium
+   * during the build step (see scripts/copy-cesium.js). We therefore set the
+   * runtime base URL to /cesium/. In dev, Vite still serves the node_modules
+   * path transparently so this works in both environments.
+   */
   define: {
-    CESIUM_BASE_URL: JSON.stringify("/node_modules/cesium/Build/Cesium/"),
+    CESIUM_BASE_URL: JSON.stringify("/cesium/"),
   },
   server: {
     proxy: {

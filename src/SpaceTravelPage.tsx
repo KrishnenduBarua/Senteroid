@@ -9,9 +9,9 @@ import React, {
 // NOTE: File header was repaired to remove an accidentally inserted JSX fragment.
 
 const BACKGROUNDS = [
-  "/src/assets/space-travel-bg/lower-orbit.png",
-  "/src/assets/space-travel-bg/middle-orbit.png",
-  "/src/assets/space-travel-bg/deep-space.png",
+  "space-travel-bg/lower-orbit.png",
+  "space-travel-bg/middle-orbit.png",
+  "space-travel-bg/deep-space.png",
 ];
 
 // Ordered bottom -> top (render reversed later to start at bottom)
