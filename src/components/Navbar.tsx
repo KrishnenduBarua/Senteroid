@@ -6,8 +6,7 @@ export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const STORYMODE_URL =
-    import.meta.env.VITE_STORYMODE_URL || "https://senterroid.vercel.app/storymode";
+  const STORYMODE_URL = "https://senterroid.vercel.app/storymode";
 
   const playClickSound = React.useCallback(() => {
     const audio = new Audio("/sound/click.mp3");
