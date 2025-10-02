@@ -1,10 +1,11 @@
-# Asteroid Impact & Exploration Simulator
+# Senteroid (Asteroid Impact & Exploration Simulator)
 
 Interactive asteroid impact simulator and educational explorer: visualize impact effects, compare seismic energy, explore tsunami estimates, and scroll a cinematic asteroid facts journey.
 
-Live Demo: (add your deployed URL once available)
+Live Website Link: https://senteroid.vercel.app/
 
 ---
+
 
 ## ✨ Features
 
@@ -30,34 +31,17 @@ Live Demo: (add your deployed URL once available)
 
 ---
 
-## 🗂 Structure (excerpt)
-
-```
-src/
-  components/
-  data/
-  styles/
-  HomePage.tsx
-  SpaceTravelPage.tsx
-public/
-  fact-images/
-  sound/
-```
-
----
-
 ## 🚀 Quick Start
 
 ```bash
 npm install
 npm run dev
-# build
-npm run build
-# preview production
-npm run preview
 ```
+And also need .env file for APIs:
+    VITE_CESIUM_ION_TOKEN= <your_cesium_ion_token>
+    VITE_NASA_API_KEY= <your_nasa_api_key>
 
-Open: http://localhost:5173 (default Vite port)
+Open: http://localhost:5173 (default)
 
 ---
 
@@ -74,68 +58,16 @@ Open: http://localhost:5173 (default Vite port)
 | Seismic Magnitude         | Approximate equivalent earthquake magnitude      |
 | Tsunami Metrics           | Source wave, 100 km height, run-up, reach radius |
 
-Tsunami + seismic models are simplified and educational only.
-
 ---
 
-## 🌐 Deploy (Vercel)
-
-1. Push to GitHub
-2. Import repo in Vercel
-3. Build: `npm run build` | Output: `dist`
-4. (If route refresh fails) add `vercel.json`:
-
-```json
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
-```
-
----
 
 ## 🔗 Resources
 
-- NASA Solar System – Asteroids: https://science.nasa.gov/solar-system/asteroids/
-- JPL CNEOS: https://cneos.jpl.nasa.gov/
-- USGS Earthquake Hazards: https://earthquake.usgs.gov/
+- NASA NeoWs: https://api.nasa.gov/neo/rest/v1/neo/browse – live NEO list for upcoming close approaches.
+- Comet Dataset: https://data.nasa.gov/dataset/near-earth-comets-orbital-elements-api – scaled comet orbits for visualization.
+- USGS Earthquakes: https://earthquake.usgs.gov/ – historic event pages used for magnitude comparison context.
+- Cesium World Imagery: https://cesium.com/platform/cesium-ion/ – for global base map & globe imagery.
+- JPL SBDB API: https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html – authoritative orbital & physical element query reference (future direct enrichment / validation).
 
 ---
 
-## 🧩 Future Ideas
-
-- 3D rotating asteroid viewer
-- Perma-links to simulations
-- Export results (CSV / JSON)
-- i18n
-- Better bathymetry-aware tsunami model
-
----
-
-## 🔐 Environment Variables
-
-Create `.env` (not committed) for future APIs:
-
-```
-VITE_NASA_API_KEY=your_key_here
-```
-
-Use via `import.meta.env.VITE_NASA_API_KEY`.
-
----
-
-## 🛡️ License
-
-(Choose a license: MIT / Apache-2.0 / etc.)
-
----
-
-## 🤝 Contributing
-
-1. Fork
-2. `git checkout -b feature/thing`
-3. Commit & push
-4. Open PR
-
----
-
-## 📣 Disclaimer
-
-This project is for educational visualization only—not for real impact hazard assessment.
