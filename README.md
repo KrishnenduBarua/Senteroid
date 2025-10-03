@@ -2,7 +2,7 @@
 
 Interactive asteroid impact simulator and educational explorer: visualize impact effects, compare seismic energy, explore tsunami estimates, and scroll a cinematic asteroid facts journey.
 
-Live Website Link: https://senteroid.vercel.app/
+**Live Website Link:** https://senteroid.vercel.app/
 
 ---
 
@@ -37,11 +37,14 @@ Live Website Link: https://senteroid.vercel.app/
 npm install
 npm run dev
 ```
-And also need .env file for APIs:
-    VITE_CESIUM_ION_TOKEN= <your_cesium_ion_token>
-    VITE_NASA_API_KEY= <your_nasa_api_key>
 
-Open: http://localhost:5173 (default)
+Create a `.env` file (root) for required API tokens:
+```
+VITE_CESIUM_ION_TOKEN=<your_cesium_ion_token>
+VITE_NASA_API_KEY=<your_nasa_api_key>
+```
+
+It will open at: http://localhost:5173 (default)
 
 ---
 
