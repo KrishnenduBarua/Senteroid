@@ -6,6 +6,12 @@ Interactive asteroid impact simulator and educational explorer: visualize impact
 
 ---
 
+## **High-Level Project Summary**
+
+Understanding asteroid threats is critical for planetary defense, but raw NASA data remains inaccessible to the general public. The "Impactor-2025" scenario highlighted a crucial gap: people struggle to comprehend what asteroid parameters actually mean for Earth's safety. Existing datasets from NASA NeoWs, JPL SBDB, and USGS are fragmented and require expertise to interpret.
+Hence, we developed **SENTEROID** - an interactive web platform that transforms complex NASA near-Earth object data into intuitive visualizations and simulations. Users can explore real asteroids and comets in orbit, simulate hypothetical impacts with scientifically-grounded calculations, learn mitigation strategies through interactive storytelling, and compare impact magnitudes with historical earthquakes. SENTEROID makes planetary defense education accessible to students, educators, and curious minds worldwide, turning intimidating numbers into understandable experiences.
+
+---
 
 ## ✨ Features
 
@@ -70,7 +76,45 @@ It will open at: http://localhost:5173 (default)
 - Comet Dataset: https://data.nasa.gov/dataset/near-earth-comets-orbital-elements-api – scaled comet orbits for visualization.
 - USGS Earthquakes: https://earthquake.usgs.gov/ – historic event pages used for magnitude comparison context.
 - Cesium World Imagery: https://cesium.com/platform/cesium-ion/ – for global base map & globe imagery.
-- JPL SBDB API: https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html – authoritative orbital & physical element query reference (future direct enrichment / validation).
+- JPL SBDB API: https://ssd-api.jpl.nasa.gov/doc/sbdb_query.html – authoritative orbital & physical element query reference.
 
 ---
 
+## What Exactly Does It Do?
+
+SENTEROID allows users to:
+
+- **Visualize asteroid/comet orbits** using live NASA NeoWs and comet datasets.
+- **Simulate asteroid impacts** by adjusting characteristics (size, speed, density, impact angle, and location).
+- **Observe results instantly** (crater size, blast radius, fireball, seismic magnitude, tsunami potential).
+- **Compare with real-world events**, such as USGS-recorded earthquakes.
+- **Engage in guided learning** via Story Mode and Fact Pages that explain key planetary defense strategies.
+
+---
+
+## How Does It Work?
+
+- The platform **fetches live data** from NASA NeoWs and comet datasets.
+- Users set impact parameters, and the **TypeScript-based physics engine** runs simplified scaling laws to compute effects.
+- Results are displayed via **CesiumJS (3D globe)** and **Leaflet (2D maps)** for intuitive visualization.
+- The system links outputs to **curated seismic events from USGS**, helping users contextualize impact severity.
+- Narrative features walk learners through **impact scenarios and mitigation strategies**, reinforcing planetary defense awareness.
+
+---
+
+## What Benefits Does It Have?
+
+- **Accessibility** – Makes complex asteroid science approachable for students, educators, and the public.
+- **Interactivity** – Users experiment with impact parameters in real time.
+- **Awareness** – Connects space science with everyday analogs like earthquakes, building planetary defense literacy.
+- **Engagement** – Blends simulations, guided storytelling, and educational resources to spark curiosity.
+
+---
+
+## What Do We Hope to Achieve?
+
+Our vision is to build a **global awareness tool** where everyone can understand what asteroid impacts mean for Earth. By combining real NASA datasets with simplified but meaningful impact modeling, SENTEROID aspires to:
+
+- Encourage **public engagement in planetary defense**.
+- Inspire **future scientists and innovators** to work in space safety.
+- Provide educators with a **ready-made interactive resource** for classrooms
